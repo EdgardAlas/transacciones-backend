@@ -27,6 +27,7 @@ app.use(sesion);
 app.use(cookieParser());
 app.use(asignarConexion);
 app.use(recuperarConexion);
+app.use(express.static('public'));
 
 // * Rutas
 
