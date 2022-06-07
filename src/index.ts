@@ -7,15 +7,19 @@ import {
   asignarConexion,
   recuperarConexion,
 } from './middlewares/conexion-usuario';
-import empleosRouter from './routes/empleo.routes';
-import frontedRouter from './routes/fronted.routes';
-import movimientosRouter from './routes/movimientos.routes';
-import transaccionesRouter from './routes/transacciones.routes';
-import usuariosRouter from './routes/usuarios.routes';
+import {
+  empleosRouter,
+  frontedRouter,
+  movimientosRouter,
+  transaccionesRouter,
+  usuariosRouter,
+} from './routes';
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 //* Middlewares
+
 app.use(cors);
 app.use(express.json());
 app.use(morgan);
