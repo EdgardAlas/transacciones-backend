@@ -1,5 +1,6 @@
 import session from 'express-session';
 import express from 'express';
+import { Client } from 'pg';
 
 declare module 'express-session' {
   interface SessionData {
